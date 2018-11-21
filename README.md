@@ -4,7 +4,7 @@ zr-pro-flex
 因为采用Flex布局，布局简要，CSS简要，同时提高开发者与用户体验性。
 ### . 快速运行
 ```git
-$ git clone http://git.jd.com/PRO/flex.git --depth=1
+$ git clone https://github.com/guguaihaha/zr-pro-flex.git
 $ cd zr-pro-flex
 $ npm install
 $ gulp DEV # 启动后，请选择index.html。如果未启动，请打开浏览器访问 http://localhost:9696/index.html
