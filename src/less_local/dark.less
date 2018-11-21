@@ -1,0 +1,352 @@
+//入口文件
+@import "./base";
+//可以使用默认主题和色彩算法模块了
+html,body,#base,.auto-size{
+  display: block;
+  width:100%;
+  height:100%;
+  font-size: 14px;
+}
+.i403{
+  padding-top: 10%;
+  text-align: center;
+  img{
+    width:200px;
+    margin: 0 auto;
+  }
+  p{
+    padding: 5px 0 0 0;
+    color: @grey-6;
+  }
+}
+.i404{
+  padding-top: 10%;
+  text-align: center;
+  img{
+    width:350px;
+    margin: 0 auto;
+  }
+  p{
+    padding: 5px 0 0 0;
+    color: @grey-6;
+  }
+}
+.i500{
+  padding-top: 6%;
+  text-align: center;
+  img{
+    width:240px;
+    margin: 0 auto;
+  }
+  p{
+    padding: 5px 0 0 0;
+    color: @grey-6;
+  }
+}
+.@{zr-prefix}-layout{
+  min-height:100vh;
+  overflow-x: hidden;
+  .@{zr-prefix}-layout-icon-home{
+    color:@grey-1;
+  }
+  .@{zr-prefix}-layout-logo{
+    background: none;
+    color:#fff;
+    margin: 0;
+    width:100%;
+    height:64px;
+    text-align: center;
+    line-height: 64px;
+  }
+  .@{zr-prefix}-layout-header{
+    .@{zr-prefix}-nav{
+      background: #fff;
+    }
+  }
+}
+.user-info{
+  width: 170px;
+  float: right;
+  box-shadow: -1px -1px 5px rgba(136, 136, 136, 0.15);
+  padding-right: 10px;
+  .user-photo{
+    width:33px;
+    height:33px;
+    display: inline-block;
+    overflow:hidden;
+    border-radius: 17px;
+    vertical-align: middle;
+    margin: 0 8px 0 24px;
+    img{
+      width:100%;
+      height:100%;
+    }
+  }
+  .zr-dropdown-menu{
+    width:165px;
+  }
+  .user-fix-top{
+    top:65px;
+  }
+}
+.@{zr-prefix}-form{
+  display: block;
+  color: @grey-8;
+  width:100%;
+  .@{zr-prefix}-form-label{
+    padding-right: 8px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: right;
+  }
+  .@{zr-prefix}-form-item{
+    display: flex;
+    line-height: 30px;
+    padding: 0 16px;
+    margin-bottom:24px;
+  }
+  .@{zr-prefix}-form-area{
+    flex: 1 1 0%;
+    vertical-align: middle;
+  }
+  .@{zr-prefix}-input-group{
+    margin: 0;
+    input{
+      border-radius: @btn-border-radius-base;
+      background: none;
+      border: 1px solid @btn-default-border;
+    }
+  }
+  .@{zr-prefix}-form-btn-group{
+    padding: 0 16px;
+    .@{zr-prefix}-btn{
+      margin-bottom: 10px;
+    }
+  }
+}
+.table-list{
+  padding-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media ( max-width: @screen-phone ) {
+  //默认手机
+  //平板
+  .zr-form .zr-form-item-title{
+    text-align: left;
+  }
+  .zr-layout{
+    position: relative;
+    .zr-layout-side{
+      position: absolute;
+      left:0;
+      top:0;
+      bottom:0;
+      z-index: 500;
+    }
+    .zr-bgground-shadow{
+      display: block;
+    }
+  }
+  .zr-bgground-shadow{
+    position: fixed;
+    left:200px;
+    top:0;
+    right:0;
+    bottom:0;
+    z-index: 499;
+    display: none;
+    opacity: 0;
+    transition: all 0.3s ease;
+    background: @grey-7;
+  }
+  .zr-bgground-show{
+    opacity: 1;
+    display: block;
+  }
+  .zr-layout-collapsedClassName{
+    width:0;
+    flex: 0 0 0;
+    overflow:hidden;
+    .zr-bgground-shadow{
+      opacity: 0;
+      display: none;
+    }
+  }
+  .zr-layout > .zr-layout{
+    position: relative;
+    z-index: 600;
+  }
+  .zr-layout > .zr-layout-low{
+    position: relative;
+    z-index: 400;
+  }
+  .zr-dropdown-normal{
+    display: none;
+  }
+  .user-info{
+    width:80px;
+    .zr-dropdown{
+      width:80px;
+    }
+  }
+
+
+  .zr-layout-header{
+    .zr-nav{
+      display: none;
+    }
+    .zr-nav-block{
+      display: block;
+      position: fixed;
+      left:0;
+      top:58px;
+      right:0;
+      z-index: 600;
+    }
+    .zr-nav-item{
+      display: block;
+      background: @grey-1;
+    }
+    .zr-nav-selected{
+      background: @primary-6;
+    }
+    [class*=" zricon-"],[class^="zricon-"]{
+      &:hover{
+        color:@primary-6;
+      }
+    }
+  }
+
+}
+@media (min-width: @screen-xs-min ){
+  //平板
+  .zr-layout{
+    position: relative;
+    .zr-layout-side{
+      position: absolute;
+      left:0;
+      top:0;
+      bottom:0;
+      z-index: 500;
+    }
+    .zr-bgground-shadow{
+      display: block;
+    }
+  }
+  .zr-bgground-shadow{
+    position: fixed;
+    left:200px;
+    top:0;
+    right:0;
+    bottom:0;
+    z-index: 499;
+    display: none;
+    opacity: 0;
+    transition: all 0.3s ease;
+    background: @grey-7;
+  }
+  .zr-bgground-show{
+    opacity: 1;
+    display: block;
+  }
+  .zr-layout-collapsedClassName{
+    width:0;
+    flex: 0 0 0;
+    overflow:hidden;
+    .zr-bgground-shadow{
+      opacity: 0;
+      display: none;
+    }
+  }
+  .zr-layout > .zr-layout{
+    position: relative;
+    z-index: 600;
+  }
+  .zr-layout > .zr-layout-low{
+    position: relative;
+    z-index: 400;
+  }
+  .zr-dropdown-normal{
+    display: none;
+  }
+  .user-info{
+    width:80px;
+    .zr-dropdown{
+      width:80px;
+    }
+  }
+  .zricon-classify-empty{
+    display: none;
+  }
+
+
+
+
+
+}
+@media (min-width: @screen-lg-min ){
+  //大桌面显示器
+  .zr-layout-header{
+    .zr-nav{
+      display: block;
+    }
+    .zr-nav-item{
+      display: inline-block;
+      background: @grey-1;
+    }
+    .zr-nav-selected{
+      background: @primary-6;
+    }
+  }
+
+
+
+  .zr-layout-collapsedClassName{
+    width:64px;
+    flex: 0 0 64px;
+    overflow: visible;
+  }
+  .zr-layout{
+    .zr-bgground-show{
+      display: none;
+    }
+    .zr-layout-side{
+      position: static;
+    }
+  }
+  .zr-dropdown-normal{
+    display: inline-block;
+  }
+  .user-info{
+    width:auto;
+    .zr-dropdown{
+      width:auto;
+    }
+  }
+}
+.zr-layout-side{
+  background:#0a0e5c; ;
+}
+
+
+
+
+
+
+

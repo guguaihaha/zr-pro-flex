@@ -1,0 +1,3 @@
+
+Zr.add("./js/demo",function(zr,$){var tools=zr.tools,dom=zr.dom;var demo={init:function(config){this.events.domClickEvent();},options:{index:0,},events:{domClickEvent:function(){$("body").off("click",demo.eventsFn.domClickFn).on("click",demo.eventsFn.domClickFn)}},eventsFn:{domClickFn:function(){demo.options.index++;console.log(demo.options.index);}},ajax:{domReloadAjax:function(){}}}
+return{init:demo.init,setIndex:function(number){demo.options.index=number;},getIndex:function(){return demo.options.index;}}},{requires:["jquery"]})

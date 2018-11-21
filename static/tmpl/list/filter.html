@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta  name="keywords" content="Pro,PRO" />
+    <meta name="description" content="Zr PRO by Zr design" />
+    <title>Zr PRO by Zr design</title>
+    <script type="text/javascript" language="javascript" src="//storage.jd.com/1.3.3/zr.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="//storage.jd.com/1.3.3/zr/css/cdn_zr.min.css" />
+    <link type="text/css" rel="stylesheet" href="/static/css/dark.min.css" />
+</head>
+<body>
+<!--style开发模式-->
+<div id="base">
+    <div class="auto-size">
+        <div class="zr-layout zr-layout-has-side zr-layout-side-trigger zr-layout-theme-dark">
+            <div class="zr-layout-side">
+                <div class="zr-layout-side-children zr-nav-geekblue">
+                    <div class="zr-layout-logo">LOGO</div>
+                    <div class="zr-layout-icon-home">
+                        <i class="zricon-home-empty"></i>
+                    </div>
+                    <ul class="zr-nav zr-nav-shrink zr-nav-tree" trigger="double" zr-event="click">
+                        <!--二级导航效果一-->
+                        <li class="zr-nav-item">
+                            <div class="zr-nav-subtitle">
+                                <i class="zricon-classify-empty"></i><span class="zr-nav-subset-title">dashboard</span>
+                                <i class="zricon-arrow-down"></i>
+                            </div>
+                            <!--一级菜单-->
+                            <ul class="zr-nav-menu">
+                                <li class="zr-nav-item">
+                                    <!--可以使用 <a> 标签-->
+                                    <a href="/static/tmpl/dashboard/workboard.html" class="zr-nav-subtitle">工作台</a>
+                                </li>
+                                <li class="zr-nav-item">
+                                    <div class="zr-nav-subtitle">
+                                        <span class="zr-nav-subset-title">可视化方式</span><i class="zricon-arrow-down"></i></div>
+                                    <!--子集菜单-->
+                                    <ul class="zr-nav-leaves">
+                                        <li class="zr-nav-item">
+                                            <a class="zr-nav-subtitle" href="/static/tmpl/dashboard/view/one.html">传统布局</a>
+                                        </li>
+                                        <li class="zr-nav-item">
+                                            <a class="zr-nav-subtitle" href="/static/tmpl/dashboard/view/two.html">信息布局</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--二级导航效果一-->
+                        <li class="zr-nav-item">
+                            <div class="zr-nav-subtitle">
+                                <i class="zricon-menu-empty"></i><span class="zr-nav-subset-title">表单</span>
+                                <i class="zricon-arrow-down"></i>
+                            </div>
+                            <!--一级菜单-->
+                            <ul class="zr-nav-menu">
+                                <li class="zr-nav-item">
+                                    <a href="/static/tmpl/form/base.html" class="zr-nav-subtitle">基础类型</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--二级导航效果一-->
+                        <li class="zr-nav-item zr-nav-show">
+                            <div class="zr-nav-subtitle">
+                                <i class="zricon-doc-empty"></i><span class="zr-nav-subset-title">列表</span>
+                                <i class="zricon-arrow-down"></i>
+                            </div>
+                            <!--一级菜单-->
+                            <ul class="zr-nav-menu">
+                                <li class="zr-nav-item zr-nav-selected">
+                                    <a href="/static/tmpl/list/filter.html" class="zr-nav-subtitle">列表筛选方式</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--二级导航效果一-->
+                        <li class="zr-nav-item">
+                            <div class="zr-nav-subtitle">
+                                <i class="zricon-minus-empty"></i><span class="zr-nav-subset-title">详情页</span>
+                                <i class="zricon-arrow-down"></i>
+                            </div>
+                            <!--一级菜单-->
+                            <ul class="zr-nav-menu">
+                                <li class="zr-nav-item">
+                                    <a href="/static/tmpl/detail/normal.html" class="zr-nav-subtitle">基础详情页</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--二级导航效果一-->
+                        <li class="zr-nav-item">
+                            <div class="zr-nav-subtitle">
+                                <i class="zricon-filter-empty"></i><span class="zr-nav-subset-title">结果展示页</span>
+                                <i class="zricon-arrow-down"></i>
+                            </div>
+                            <!--一级菜单-->
+                            <ul class="zr-nav-menu">
+                                <li class="zr-nav-item">
+                                    <a href="/static/tmpl/result/success.html" class="zr-nav-subtitle">成功</a>
+                                </li>
+                                <li class="zr-nav-item">
+                                    <a href="/static/tmpl/result/fail.html" class="zr-nav-subtitle">失败</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="zr-nav-item">
+                            <div class="zr-nav-subtitle">
+                                <i class="zricon-info-empty"></i><span class="zr-nav-subset-title">异常展示</span>
+                                <i class="zricon-arrow-down"></i>
+                            </div>
+                            <!--一级菜单-->
+                            <ul class="zr-nav-menu">
+                                <li class="zr-nav-item">
+                                    <a href="/static/tmpl/error/403.html" class="zr-nav-subtitle">403</a>
+                                </li>
+                                <li class="zr-nav-item">
+                                    <a href="/static/tmpl/error/404.html" class="zr-nav-subtitle">404</a>
+                                </li>
+                                <li class="zr-nav-item">
+                                    <a href="/static/tmpl/error/500.html" class="zr-nav-subtitle">500</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="zr-layout">
+                <div class="zr-layout-header">
+                    <div class="zr-row-flex">
+                        <div class="zr-col-2 zr-layout-trigger" id="double"><i class="zricon-menu-empty"></i></div>
+                        <div class="zr-col-16">
+                            <ul class="zr-nav zr-nav-horizontal">
+                                <!--当前选中状态 添加zr-nav-selected-->
+                                <li class="zr-nav-item zr-nav-selected">系统管理</li>
+                                <!--默认状态-->
+                                <li class="zr-nav-item">系统规划</li>
+                                <!--有下拉菜单状态-->
+                                <li class="zr-nav-item">
+                                    物流规划 <i class="zricon-arrow-down"></i>
+                                    <!--一级菜单-->
+                                    <ul class="zr-nav-menu">
+                                        <li class="zr-nav-item">目标规划</li>
+                                        <li class="zr-nav-item">
+                                            赋能规划<i class="zricon-arrow-right"></i>
+                                            <!--子集菜单-->
+                                            <ul class="zr-nav-leaves">
+                                                <li class="zr-nav-item">对外</li>
+                                                <li class="zr-nav-item">商家</li>
+                                                <li class="zr-nav-item">客服</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="zr-col-6">
+                            <div class="user-info">
+                                <div class="zr-dropdown zr-dropdown-right">
+                                    <div class="user-photo">
+                                        <img src="//storage.jd.com/zrstatic/images/demo2.jpg" />
+                                    </div>
+                                    <!--标题名称-->
+                                    <a class="zr-dropdown-normal" href="javascript:void(0);">Dropdown<i class="zricon-arrow-down"></i></a>
+                                    <!--下拉菜单-->
+                                    <ul class="zr-dropdown-menu user-fix-top">
+                                        <li class="zr-dropdown-item">
+                                            <a target="_blank" href="#">Item 1</a>
+                                        </li>
+                                        <li class="zr-dropdown-item">
+                                            <a target="_blank" href="#">Item 2</a>
+                                        </li>
+                                        <li class="zr-dropdown-item zr-dropdown-disable">
+                                            Item 3（disable）
+                                        </li>
+                                        <li class="zr-dropdown-divider"></li>
+                                        <li class="zr-dropdown-item">
+                                            <a target="_blank" href="#">Item 4（normal）</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="zr-layout-content">
+                    <div class="zr-breadcrumb pro-breadcrumb">
+                        <em class="zr-breadcrumb-normal"><i class="zricon-home-empty"></i></em>
+                        <i class="zricon-arrow-right zr-breadcrumb-icon"></i>
+                        <em class="zr-breadcrumb-normal">
+                            <a href="" class="zr-breadcrumb-link">列表页</a>
+                        </em>
+                        <i class="zricon-arrow-right zr-breadcrumb-icon"></i>
+                        <em class="zr-breadcrumb-normal">
+                            列表筛选方式一
+                        </em>
+                    </div>
+                    <div id="content" style="min-height: calc(100vh - 106px);background: #fff;padding: 24px 0; margin: 0 24px;">
+                        <!--内容区域-->
+                        <form class="zr-form">
+                            <div class="zr-row-flex">
+                                <div class="zr-col-lg-6 zr-col-sm-12 zr-col-xs-24">
+                                    <label class="zr-form-item">
+                                        <span class="zr-form-label">
+                                            主营参数：
+                                        </span>
+                                        <span class="zr-form-area">
+                                            <input type="text" placeholder="请输入参数" class="zr-input zr-input-clear">
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="zr-col-lg-6 zr-col-sm-12 zr-col-xs-24">
+                                    <div class="zr-form-item">
+                                        <span class="zr-form-label">
+                                            地区选择：
+                                        </span>
+                                        <span class="zr-form-area">
+                                             <select name="country" class="zr-select">
+                                                <option value="">请选择一个城市</option>
+                                                <option value="010">北京</option>
+                                                <option value="021">上海</option>
+                                                <option value="0571">杭州</option>
+                                             </select>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="zr-col-lg-6 zr-col-sm-12 zr-col-xs-24">
+                                    <label class="zr-form-item">
+                                        <span class="zr-form-label">
+                                            主营收入：
+                                        </span>
+                                        <span class="zr-form-area">
+                                            <input type="text" placeholder="输入营业收入" class="zr-input zr-input-clear">
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="zr-col-lg-6 zr-col-sm-12 zr-col-xs-24">
+                                    <label class="zr-form-item">
+                                        <span class="zr-form-label">
+                                            单位收入：
+                                        </span>
+                                        <span class="zr-form-area">
+                                            <input type="text" placeholder="输入单价收入" class="zr-input zr-input-clear">
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="zr-row-flex">
+                                <div class="zr-col-lg-6 zr-col-sm-12 zr-col-xs-24">
+                                    <label class="zr-form-item">
+                                        <span class="zr-form-label">
+                                            附属参数：
+                                        </span>
+                                        <span class="zr-form-area">
+                                            <input type="text" placeholder="请输入附属参数" class="zr-input zr-input-clear">
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="zr-col-lg-6 zr-col-sm-12 zr-col-xs-24">
+                                    <div class="zr-form-item">
+                                        <span class="zr-form-label">
+                                            附属区域：
+                                        </span>
+                                        <span class="zr-form-area">
+                                             <select name="country" class="zr-select">
+                                                <option value="">请选择一个城市</option>
+                                                <option value="010">北京</option>
+                                                <option value="021">上海</option>
+                                                <option value="0571">杭州</option>
+                                             </select>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="zr-col-lg-6 zr-col-sm-12 zr-col-xs-24">
+                                    <label class="zr-form-item">
+                                        <span class="zr-form-label">
+                                            附属收入：
+                                        </span>
+                                        <span class="zr-form-area">
+                                            <input type="text" placeholder="输入附属营业收入" class="zr-input zr-input-clear">
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="zr-col-lg-6 zr-col-sm-12 zr-col-xs-24">
+                                    <label class="zr-form-item">
+                                        <span class="zr-form-label">
+                                            附属单价：
+                                        </span>
+                                        <span class="zr-form-area">
+                                            <input type="text" placeholder="输入附属单价收入" class="zr-input zr-input-clear">
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="zr-col-lg-6 zr-col-sm-12 zr-col-xs-24">
+                                    <label class="zr-form-item">
+                                        <span class="zr-form-label">
+                                            统计参数：
+                                        </span>
+                                        <span class="zr-form-area">
+                                            <input type="text" placeholder="输入统计参数" class="zr-input zr-input-clear">
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="zr-col-lg-6 zr-col-sm-12 zr-col-xs-24">
+                                    <label class="zr-form-item">
+                                        <span class="zr-form-label">
+                                            统计单价：
+                                        </span>
+                                        <span class="zr-form-area">
+                                            <input type="text" placeholder="输入统计单价" class="zr-input zr-input-clear">
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="zr-col-lg-6 zr-col-sm-12 zr-col-xs-24">
+                                    <label class="zr-form-item">
+                                        <span class="zr-form-label">
+                                            统计类型：
+                                        </span>
+                                        <span class="zr-form-area">
+                                            <input type="text" placeholder="输入统计类型" class="zr-input zr-input-clear">
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="zr-col-lg-6 zr-col-sm-12 zr-col-xs-24">
+                                    <label class="zr-form-item">
+                                        <span class="zr-form-label">
+                                            统计质量：
+                                        </span>
+                                        <span class="zr-form-area">
+                                            <input type="text" placeholder="输入统计质量" class="zr-input zr-input-clear">
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="zr-row-flex">
+                               <div class="zr-col-24 zr-form-btn-group">
+                                   <input type="submit" class="zr-btn zr-btn-primary" value="查询" />
+                                   <input type="button" class="zr-btn zr-btn-primary" id="newModal" value="新建" />
+                                   <input type="button" class="zr-btn zr-btn-default" id="newImport" value="导入" />
+                                   <input type="button" class="zr-btn zr-btn-default" id="newExport" value="导出" />
+                                   <input type="button" class="zr-btn zr-btn-default" id="newDelete" value="删除" />
+                               </div>
+                            </div>
+                        </form>
+                        <div class="table-list">
+                            <div class="zr-table-wrap">
+                                <table>
+                                    <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Name</th>
+                                        <th>Age</th>
+                                        <th>Country</th>
+                                        <th class="zr-table-text-right">Price</th>
+                                        <th>Action</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>001</td>
+                                        <td>Otto Clay</td>
+                                        <td>23</td>
+                                        <td>China</td>
+                                        <td class="zr-table-text-right">23.00</td>
+                                        <td><a>Edit</a><a>Delete</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>002</td>
+                                        <td>Otto Clay</td>
+                                        <td>23</td>
+                                        <td>China</td>
+                                        <td class="zr-table-text-right">23.00</td>
+                                        <td><a>Edit</a><a>Delete</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>003</td>
+                                        <td>Otto Clay</td>
+                                        <td>23</td>
+                                        <td>China</td>
+                                        <td class="zr-table-text-right">23.00</td>
+                                        <td><a>Edit</a><a>Delete</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>004</td>
+                                        <td>Otto Clay</td>
+                                        <td>23</td>
+                                        <td>China</td>
+                                        <td class="zr-table-text-right">23.00</td>
+                                        <td><a>Edit</a><a>Delete</a></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!--内容区域-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--新建内容模态框-->
+<div class="zr-modal fade zr-modal-prompt zr-modal-lg">
+    <div class="zr-modal-dialog">
+        <div class="zr-modal-content">
+            <div class="zr-modal-header">
+                <p class="zr-modal-title">
+                    <span>新建内容</span>
+                    <i class="zricon-close zr-modal-close"></i>
+                </p>
+            </div>
+            <div class="zr-modal-body">
+                <form class="zr-form">
+                    <div class="zr-row-flex">
+                        <div class="zr-col-lg-12 zr-col-sm-24 zr-col-xs-24">
+                            <label class="zr-form-item">
+                                <span class="zr-form-label">
+                                    主营参数：
+                                </span>
+                                <span class="zr-form-area">
+                                   <div class="zr-input-group"><input type="text" placeholder="请输入参数" class="zr-input zr-input-clear"><i class="zricon-close-circle"></i></div>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="zr-col-lg-12 zr-col-sm-24 zr-col-xs-24">
+                            <div class="zr-form-item">
+                                <span class="zr-form-label">
+                                    地区选择：
+                                </span>
+                                <span class="zr-form-area">
+                                   <select name="country" class="zr-select zr-select-hide">
+                                        <option value="">请选择一个城市</option>
+                                        <option value="010">北京</option>
+                                        <option value="021">上海</option>
+                                        <option value="0571">杭州</option>
+                                   </select>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="zr-col-lg-12 zr-col-sm-24 zr-col-xs-24">
+                            <label class="zr-form-item">
+                                <span class="zr-form-label">
+                                单个价格：
+                                </span>
+                                <span class="zr-form-area">
+                                   <input type="text" placeholder="请输入价格" class="zr-input zr-input-clear">
+                                </span>
+                            </label>
+                        </div>
+                        <div class="zr-col-lg-12 zr-col-sm-24 zr-col-xs-24">
+                            <label class="zr-form-item">
+                                <span class="zr-form-label">
+                                信息数量：
+                                </span>
+                                <span class="zr-form-area">
+                                   <input type="text" placeholder="请输入数量" class="zr-input zr-input-clear">
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="zr-modal-footer">
+                <input type="button"  class="zr-btn zr-btn-default zr-modal-btn zr-modal-cancel" value="取消"/>
+                <input type="button"  class="zr-btn zr-btn-primary zr-modal-btn zr-modal-enter" value="保存"/>
+            </div>
+        </div>
+    </div>
+</div>
+<!--导入模态框-->
+<div class="zr-modal fade zr-modal-import">
+    <div class="zr-modal-dialog">
+        <div class="zr-modal-content">
+            <div class="zr-modal-header">
+                <p class="zr-modal-title">
+                    <span>导入信息</span>
+                    <i class="zricon-close zr-modal-close"></i>
+                </p>
+            </div>
+            <div class="zr-modal-body">
+                <input type="file" accept="" class="zr-upload zr-upload-manual">
+                <ul class="zr-upload-list">
+                    <li>
+                        <i class="zricon-accessory-empty"></i><span>Accessory1.png</span><i class="delete zricon-close"></i>
+                    </li>
+                </ul>
+                <div class="zr-upload-btn">
+                    <button class="zr-btn zr-btn-primary zr-btn-disable">Upload</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    //配置方法
+    Zr.config({
+        //配置plugin_modules的目录；
+        baseUrl:"/static/",
+        //开发模式，默认关闭；
+        requestTime:true
+    })
+    //初始入口，Zr各个模块准备就绪后调用；
+    Zr.ready(function(){
+        Zr.use("./js/pro","./js/list/list_filter");
+    })
+</script>
+</body>
+</html>

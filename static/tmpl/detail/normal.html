@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta  name="keywords" content="Pro,PRO" />
+    <meta name="description" content="Zr PRO by Zr design" />
+    <title>Zr PRO by Zr design</title>
+    <script type="text/javascript" language="javascript" src="//storage.jd.com/1.3.3/zr.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="//storage.jd.com/1.3.3/zr/css/cdn_zr.min.css" />
+    <link type="text/css" rel="stylesheet" href="/static/css/dark.min.css" />
+</head>
+<body>
+<!--style开发模式-->
+<div id="base">
+    <div class="auto-size">
+        <div class="zr-layout zr-layout-has-side zr-layout-side-trigger zr-layout-theme-dark">
+            <div class="zr-layout-side">
+                <div class="zr-layout-side-children zr-nav-geekblue">
+                    <div class="zr-layout-logo">LOGO</div>
+                    <div class="zr-layout-icon-home">
+                        <i class="zricon-home-empty"></i>
+                    </div>
+                    <ul class="zr-nav zr-nav-shrink zr-nav-tree" trigger="trigger" zr-event="click">
+                        <!--二级导航效果一-->
+                        <li class="zr-nav-item ">
+                            <div class="zr-nav-subtitle">
+                                <i class="zricon-classify-empty"></i><span class="zr-nav-subset-title">dashboard</span>
+                                <i class="zricon-arrow-down"></i>
+                            </div>
+                            <!--一级菜单-->
+                            <ul class="zr-nav-menu">
+                                <li class="zr-nav-item">
+                                    <!--可以使用 <a> 标签-->
+                                    <a href="/static/tmpl/dashboard/workboard.html" class="zr-nav-subtitle">工作台</a>
+                                </li>
+                                <li class="zr-nav-item">
+                                    <div class="zr-nav-subtitle">
+                                        <span class="zr-nav-subset-title">可视化方式</span><i class="zricon-arrow-down"></i></div>
+                                    <!--子集菜单-->
+                                    <ul class="zr-nav-leaves">
+                                        <li class="zr-nav-item">
+                                            <a class="zr-nav-subtitle" href="/static/tmpl/dashboard/view/one.html">传统布局</a>
+                                        </li>
+                                        <li class="zr-nav-item">
+                                            <a class="zr-nav-subtitle" href="/static/tmpl/dashboard/view/two.html">信息布局</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--二级导航效果一-->
+                        <li class="zr-nav-item">
+                            <div class="zr-nav-subtitle">
+                                <i class="zricon-menu-empty"></i><span class="zr-nav-subset-title">表单</span>
+                                <i class="zricon-arrow-down"></i>
+                            </div>
+                            <!--一级菜单-->
+                            <ul class="zr-nav-menu">
+                                <li class="zr-nav-item">
+                                    <a href="/static/tmpl/form/base.html" class="zr-nav-subtitle">基础类型</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--二级导航效果一-->
+                        <li class="zr-nav-item">
+                            <div class="zr-nav-subtitle">
+                                <i class="zricon-doc-empty"></i><span class="zr-nav-subset-title">列表</span>
+                                <i class="zricon-arrow-down"></i>
+                            </div>
+                            <!--一级菜单-->
+                            <ul class="zr-nav-menu">
+                                <li class="zr-nav-item">
+                                    <a href="/static/tmpl/list/filter.html" class="zr-nav-subtitle">列表筛选方式</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--二级导航效果一-->
+                        <li class="zr-nav-item zr-nav-show">
+                            <div class="zr-nav-subtitle">
+                                <i class="zricon-minus-empty"></i><span class="zr-nav-subset-title">详情页</span>
+                                <i class="zricon-arrow-down"></i>
+                            </div>
+                            <!--一级菜单-->
+                            <ul class="zr-nav-menu">
+                                <li class="zr-nav-item zr-nav-selected">
+                                    <a href="/static/tmpl/detail/normal.html" class="zr-nav-subtitle">基础详情页</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--二级导航效果一-->
+                        <li class="zr-nav-item">
+                            <div class="zr-nav-subtitle">
+                                <i class="zricon-filter-empty"></i><span class="zr-nav-subset-title">结果展示页</span>
+                                <i class="zricon-arrow-down"></i>
+                            </div>
+                            <!--一级菜单-->
+                            <ul class="zr-nav-menu">
+                                <li class="zr-nav-item">
+                                    <a href="/static/tmpl/result/success.html" class="zr-nav-subtitle">成功</a>
+                                </li>
+                                <li class="zr-nav-item">
+                                    <a href="/static/tmpl/result/fail.html" class="zr-nav-subtitle">失败</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="zr-nav-item">
+                            <div class="zr-nav-subtitle">
+                                <i class="zricon-info-empty"></i><span class="zr-nav-subset-title">异常展示</span>
+                                <i class="zricon-arrow-down"></i>
+                            </div>
+                            <!--一级菜单-->
+                            <ul class="zr-nav-menu">
+                                <li class="zr-nav-item">
+                                    <a href="/static/tmpl/error/403.html" class="zr-nav-subtitle">403</a>
+                                </li>
+                                <li class="zr-nav-item">
+                                    <a href="/static/tmpl/error/404.html" class="zr-nav-subtitle">404</a>
+                                </li>
+                                <li class="zr-nav-item">
+                                    <a href="/static/tmpl/error/500.html" class="zr-nav-subtitle">500</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="zr-layout">
+                <div class="zr-layout-header">
+                    <div class="zr-row-flex">
+                        <div class="zr-col-2 zr-layout-trigger" id="double"><i class="zricon-menu-empty"></i></div>
+                        <div class="zr-col-16">
+                            <ul class="zr-nav zr-nav-horizontal">
+                                <!--当前选中状态 添加zr-nav-selected-->
+                                <li class="zr-nav-item zr-nav-selected">系统管理</li>
+                                <!--默认状态-->
+                                <li class="zr-nav-item">系统规划</li>
+                                <!--有下拉菜单状态-->
+                                <li class="zr-nav-item">
+                                    物流规划 <i class="zricon-arrow-down"></i>
+                                    <!--一级菜单-->
+                                    <ul class="zr-nav-menu">
+                                        <li class="zr-nav-item">目标规划</li>
+                                        <li class="zr-nav-item">
+                                            赋能规划<i class="zricon-arrow-right"></i>
+                                            <!--子集菜单-->
+                                            <ul class="zr-nav-leaves">
+                                                <li class="zr-nav-item">对外</li>
+                                                <li class="zr-nav-item">商家</li>
+                                                <li class="zr-nav-item">客服</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="zr-col-6">
+                            <div class="user-info">
+                                <div class="zr-dropdown zr-dropdown-right">
+                                    <div class="user-photo">
+                                        <img src="//storage.jd.com/zrstatic/images/demo2.jpg" />
+                                    </div>
+                                    <!--标题名称-->
+                                    <a class="zr-dropdown-normal" href="javascript:void(0);">Dropdown<i class="zricon-arrow-down"></i></a>
+                                    <!--下拉菜单-->
+                                    <ul class="zr-dropdown-menu user-fix-top">
+                                        <li class="zr-dropdown-item">
+                                            <a target="_blank" href="#">Item 1</a>
+                                        </li>
+                                        <li class="zr-dropdown-item">
+                                            <a target="_blank" href="#">Item 2</a>
+                                        </li>
+                                        <li class="zr-dropdown-item zr-dropdown-disable">
+                                            Item 3（disable）
+                                        </li>
+                                        <li class="zr-dropdown-divider"></li>
+                                        <li class="zr-dropdown-item">
+                                            <a target="_blank" href="#">Item 4（normal）</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="zr-layout-content ">
+                    <div class="zr-breadcrumb pro-breadcrumb">
+                        <em class="zr-breadcrumb-normal"><i class="zricon-home-empty"></i></em>
+                        <i class="zricon-arrow-right zr-breadcrumb-icon"></i>
+                        <em class="zr-breadcrumb-normal">
+                            详细展示
+                        </em>
+                    </div>
+                    <div id="content" style="min-height: calc(100vh - 106px);padding:0 24px 24px;">
+                        <div class="pro-use-content">
+                            <div class="zr-row-flex pro-card-wrap">
+                            <div class="zr-col-24">
+                                <div class="zr-card pro-card-content" style="padding-bottom: 0">
+                                    <div class="pro-card-title">订单号 ESL441526356165253</div>
+                                    <div class="zr-card-content" style="padding-left: 0; padding-right: 0;">
+                                        <div class="pro-description-wrap">
+                                            <div class="pro-description-left" style="min-width:60px;">创建时间</div>
+                                            <div class="pro-description-right">2018-05-02</div>
+                                        </div>
+                                        <div class="pro-description-wrap">
+                                            <div class="pro-description-left" style="min-width:60px;">创建人</div>
+                                            <div class="pro-description-right">张先生</div>
+                                        </div>
+                                        <div class="pro-barcode">
+                                            <img src="/static/img/code.png" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="pro-use-content">
+                            <div class="zr-row-flex pro-card-wrap">
+                                <div class="zr-col-24">
+                                    <div class="zr-card pro-card-content" style="padding-bottom: 0">
+                                        <div class="pro-card-title">订单流程</div>
+                                        <div class="zr-card-content">
+                                            <div class="zr-step">
+                                                <div class="zr-step-item zr-step-finish">
+                                                    <div class="zr-step-icon">
+                                                        <span>1</span>
+                                                    </div>
+                                                    <div class="zr-step-content">
+                                                        <div class="zr-step-title">提交完成</div>
+                                                        <div class="zr-step-description">2018.04.02</div>
+                                                    </div>
+                                                </div>
+                                                <div class="zr-step-item zr-step-progress">
+                                                    <div class="zr-step-icon">
+                                                        <span>2</span>
+                                                    </div>
+                                                    <div class="zr-step-content">
+                                                        <div class="zr-step-title">正在处理</div>
+                                                        <div class="zr-step-description">2018.04.03</div>
+                                                    </div>
+                                                </div>
+                                                <div class="zr-step-item">
+                                                    <div class="zr-step-icon">
+                                                        <span>3</span>
+                                                    </div>
+                                                    <div class="zr-step-content">
+                                                        <div class="zr-step-title">审核完成</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pro-use-content">
+                            <div class="zr-row-flex pro-card-wrap">
+                                <div class="zr-col-24">
+                                    <div class="zr-card pro-card-content" style="padding: 0">
+                                        <div class="zr-tab demo-tabs">
+                                            <ul class="zr-tab-header pro-tabs">
+                                                <li class="zr-tab-item ">详情</li>
+                                                <li class="zr-tab-item">日志</li>
+                                            </ul>
+                                            <div class="zr-tab-content">
+                                                <div class="zr-tab-tabpane">
+                                                    <div class="zr-card-content">
+                                                        <div class="pro-description-title">订单信息</div>
+                                                        <div class="zr-row-flex">
+                                                            <div class="pro-description-item zr-col-lg-8 zr-col-sm-12 zr-col-xs-24">
+                                                                <div class="pro-description-wrap">
+                                                                    <div class="pro-description-left">订单编号</div>
+                                                                    <div class="pro-description-right">ESL615527361829</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="pro-description-item zr-col-lg-8 zr-col-sm-12 zr-col-xs-24">
+                                                                <div class="pro-description-wrap">
+                                                                    <div class="pro-description-left">出库单号</div>
+                                                                    <div class="pro-description-right">1827630273891929</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="pro-description-item zr-col-lg-8 zr-col-sm-12 zr-col-xs-24">
+                                                                <div class="pro-description-wrap">
+                                                                    <div class="pro-description-left">销售平台号</div>
+                                                                    <div class="pro-description-right">JD73826037489273</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="pro-description-item zr-col-lg-8 zr-col-sm-12 zr-col-xs-24">
+                                                                <div class="pro-description-wrap">
+                                                                    <div class="pro-description-left">商家名称</div>
+                                                                    <div class="pro-description-right">我爱世界杯</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="pro-description-item zr-col-lg-8 zr-col-sm-12 zr-col-xs-24">
+                                                                <div class="pro-description-wrap">
+                                                                    <div class="pro-description-left">事业部名称</div>
+                                                                    <div class="pro-description-right">美丽事业部</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="pro-description-item zr-col-lg-8 zr-col-sm-12 zr-col-xs-24">
+                                                                <div class="pro-description-wrap">
+                                                                    <div class="pro-description-left">店铺名称</div>
+                                                                    <div class="pro-description-right">足球宝贝专卖</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="pro-description-item zr-col-lg-8 zr-col-sm-12 zr-col-xs-24">
+                                                                <div class="pro-description-wrap">
+                                                                    <div class="pro-description-left">销售平台</div>
+                                                                    <div class="pro-description-right">京东商城</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="pro-description-item zr-col-lg-8 zr-col-sm-12 zr-col-xs-24">
+                                                                <div class="pro-description-wrap">
+                                                                    <div class="pro-description-left">应付金额</div>
+                                                                    <div class="pro-description-right">100000.00</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="pro-description-item zr-col-lg-8 zr-col-sm-12 zr-col-xs-24">
+                                                                <div class="pro-description-wrap">
+                                                                    <div class="pro-description-left">订单来源</div>
+                                                                    <div class="pro-description-right">京仓</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="pro-description-line"></div>
+                                                        <div class="pro-description-title">客户信息</div>
+                                                        <div class="zr-row-flex">
+                                                            <div class="pro-description-item zr-col-lg-8 zr-col-sm-12 zr-col-xs-24">
+                                                                <div class="pro-description-wrap">
+                                                                    <div class="pro-description-left">客户姓名</div>
+                                                                    <div class="pro-description-right">张先生</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="pro-description-item zr-col-lg-8 zr-col-sm-12 zr-col-xs-24">
+                                                                <div class="pro-description-wrap">
+                                                                    <div class="pro-description-left">手机</div>
+                                                                    <div class="pro-description-right">18310796966</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="pro-description-item zr-col-lg-8 zr-col-sm-12 zr-col-xs-24">
+                                                                <div class="pro-description-wrap">
+                                                                    <div class="pro-description-left">客户邮箱</div>
+                                                                    <div class="pro-description-right">joker@zr.com</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="pro-description-item zr-col-24">
+                                                                <div class="pro-description-wrap">
+                                                                    <div class="pro-description-left">收货地址</div>
+                                                                    <div class="pro-description-right">北京市大兴区亦庄经济技术开发区科创大街</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="pro-description-item zr-col-24">
+                                                                <div class="pro-description-wrap">
+                                                                    <div class="pro-description-left">客户留言</div>
+                                                                    <div class="pro-description-right">集装箱需要6整箱，必须过安检，必须有路由信息，送货需要送达目的地。费用按照合同约定交付。</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="pro-description-line"></div>
+                                                        <div class="pro-description-title">订单列表</div>
+                                                        <div class="zr-table-wrap"  style="margin-bottom: 30px;">
+                                                            <table id="order-detail" class="display" style="width:100%">
+                                                                <thead>
+                                                                <tr>
+                                                                    <th>用户名</th>
+                                                                    <th>类型</th>
+                                                                    <th>办公地点</th>
+                                                                    <th>订货量</th>
+                                                                    <th>发货日期</th>
+                                                                    <th>订单金额</th>
+                                                                </tr>
+                                                                </thead>
+
+                                                            </table>
+                                                        </div>
+                                                        <div class="pro-description-line"></div>
+                                                        <div class="pro-description-title">订单分析</div>
+                                                        <div class="zr-tab zr-tab-card">
+                                                            <ul class="zr-tab-header">
+                                                                <li class="zr-tab-item">销售</li>
+                                                                <li class="zr-tab-item">成本</li>
+                                                                <li class="zr-tab-item">利润</li>
+                                                            </ul>
+                                                            <div class="zr-tab-content">
+                                                                <div class="zr-tab-tabpane">
+                                                                    <div class="zr-table-wrap" style="margin-bottom: 30px;">
+                                                                        <table>
+                                                                            <thead>
+                                                                            <tr>
+                                                                                <th>商品编码</th>
+                                                                                <th>商品名称</th>
+                                                                                <th>商品条码</th>
+                                                                                <th class="zr-table-text-right">价格</th>
+                                                                                <th>税率</th>
+                                                                                <th>最小起订量</th>
+                                                                            </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                            <tr>
+                                                                                <td>19281381038</td>
+                                                                                <td>自营 桂格早餐谷物 膳食纤维 即食燕麦片超值装1478g</td>
+                                                                                <td>JD73629021123</td>
+                                                                                <td class="zr-table-text-right">¥23.00</td>
+                                                                                <td>0.12</td>
+                                                                                <td>1000</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>19281381128</td>
+                                                                                <td>西麦 即食 营养早餐谷物 纯燕麦片1480g</td>
+                                                                                <td>JD7362902432</td>
+                                                                                <td class="zr-table-text-right">¥13.00</td>
+                                                                                <td>0.15</td>
+                                                                                <td>3000</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>19281381138</td>
+                                                                                <td>自营 火腿 肌肉 618特卖袋装京东专供 1192g</td>
+                                                                                <td>234234021123</td>
+                                                                                <td class="zr-table-text-right">¥16.50</td>
+                                                                                <td>0.1</td>
+                                                                                <td>300</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>19281381223</td>
+                                                                                <td>自营 麦卡龙 糕点 特级糕点单粒装 125g</td>
+                                                                                <td>s67429021123</td>
+                                                                                <td class="zr-table-text-right">¥12.00</td>
+                                                                                <td>0.12</td>
+                                                                                <td>100</td>
+                                                                            </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="zr-tab-tabpane">
+                                                                    <div class="zr-table-wrap" style="margin-bottom: 30px;">
+                                                                        <table>
+                                                                            <thead>
+                                                                            <tr>
+                                                                                <th>商品编码</th>
+                                                                                <th>商品名称</th>
+                                                                                <th>商品条码</th>
+                                                                                <th class="zr-table-text-right">价格</th>
+                                                                                <th>税率</th>
+                                                                                <th>最小起订量</th>
+                                                                            </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                            <tr>
+                                                                                <td>19281381223</td>
+                                                                                <td>自营 麦卡龙 糕点 特级糕点单粒装 125g</td>
+                                                                                <td>s67429021123</td>
+                                                                                <td class="zr-table-text-right">¥12.00</td>
+                                                                                <td>0.12</td>
+                                                                                <td>100</td>
+                                                                            </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="zr-tab-tabpane">
+                                                                    <div class="zr-table-wrap" style="margin-bottom: 30px;">
+                                                                        <table>
+                                                                            <thead>
+                                                                            <tr>
+                                                                                <th>商品编码</th>
+                                                                                <th>商品名称</th>
+                                                                                <th>商品条码</th>
+                                                                                <th class="zr-table-text-right">价格</th>
+                                                                                <th>税率</th>
+                                                                                <th>最小起订量</th>
+                                                                            </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                            <tr>
+                                                                                <td>19281381138</td>
+                                                                                <td>自营 火腿 肌肉 618特卖袋装京东专供 1192g</td>
+                                                                                <td>234234021123</td>
+                                                                                <td class="zr-table-text-right">¥16.50</td>
+                                                                                <td>0.1</td>
+                                                                                <td>300</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>19281381223</td>
+                                                                                <td>自营 麦卡龙 糕点 特级糕点单粒装 125g</td>
+                                                                                <td>s67429021123</td>
+                                                                                <td class="zr-table-text-right">¥12.00</td>
+                                                                                <td>0.12</td>
+                                                                                <td>100</td>
+                                                                            </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="zr-tab-tabpane">
+                                                    <div class="zr-card-content">
+                                                        <div class="pro-description-title">实时日志信息</div>
+                                                        <ul class="zr-timeline" style="margin-top: 20px;">
+                                                            <li class="zr-timeline-item zr-timeline-green">
+                                                                <i class="zricon-ok-circle"></i>
+                                                                <div class="zr-timeline-content">
+                                                                    <h3>2018-01-21</h3>
+                                                                    <span>
+                                                                        <p>收到下单信息，系统正在核算并分区发货</p>
+                                                                        <p>根据留言信息进行定制化流程</p>
+                                                                    </span>
+                                                                </div>
+                                                            </li>
+                                                            <li class="zr-timeline-item zr-timeline-error">
+                                                                <i class="zricon-close-circle"></i>
+                                                                <div class="zr-timeline-content">
+                                                                    <h3>2018-01-23</h3>
+                                                                    <span>
+                                                                        <p>已经装箱并发货</p>
+                                                                    </span>
+                                                                </div>
+                                                            </li>
+                                                            <li class="zr-timeline-item zr-timeline-warning">
+                                                                <i class="zr-timeline-icon"></i>
+                                                                <div class="zr-timeline-content">
+                                                                    <h3>2018-01-27</h3>
+                                                                    <span>
+                                                                        <p>水路，运送到天津塘沽集装箱口</p>
+                                                                    </span>
+                                                                </div>
+                                                            </li>
+                                                            <li class="zr-timeline-item">
+                                                                <i class="zricon-spin6 animate-spin"></i>
+                                                                <div class="zr-timeline-content">
+                                                                    <h3>2018-01-30</h3>
+                                                                    <span>
+                                                                        <p>转运到北京亦庄仓库中</p>
+                                                                    </span>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    //配置方法
+    Zr.config({
+        //配置plugin_modules的目录；
+        baseUrl:"/static/",
+        //开发模式，默认关闭；
+        requestTime:true
+    })
+    //初始入口，Zr各个模块准备就绪后调用；
+    Zr.ready(function(){
+        Zr.use("./js/pro","tab","jquery","datatables",function(zr,pro,tab,$){
+            tab.init({
+                target:".demo-tabs"
+            })
+            tab.init({
+                target:".zr-tab-card"
+            })
+            //datatables属于jquery组件，所以只需要引入jquery即可
+            //模拟ajax返回的data数据结构
+            $("#order-detail").DataTable({
+                "ajax":"/static/tmpl/detail/detail.json",
+                searching: false,
+                lengthChange:false,
+                language:{
+                    paginate:{
+                        next:">",
+                        previous:"<"
+                    }
+                }
+            })
+
+        });
+    })
+</script>
+</body>
+</html>

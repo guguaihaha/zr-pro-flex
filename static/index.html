@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta  name="keywords" content="Pro,PRO" />
+    <meta name="description" content="Zr PRO by Zr design" />
+    <title>Zr PRO by Zr design</title>
+    <script type="text/javascript" language="javascript" src="//storage.360buyimg.com/0.0.1/zr.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="//storage.360buyimg.com/0.0.1/zr/css/cdn_zr.css" />
+    <link type="text/css" rel="stylesheet" href="/static/css/light.min.css" />
+</head>
+<body>
+<!--此文件上线后放到 </head> 前-->
+<!--style开发模式-->
+<div id="base">
+    <div class="auto-size">
+        <div class="zr-layout zr-layout-has-side zr-layout-side-trigger">
+            <div class="zr-layout-side">
+                <div class="zr-layout-side-children">
+                    <div class="zr-layout-logo">LOGO</div>
+                    <div class="zr-layout-icon-home">
+                        <i class="zricon-home-empty"></i>
+                    </div>
+                    <ul class="zr-nav zr-nav-tree zr-nav-shrink deepblue" trigger="double">
+                        <!--二级导航可选效果一-->
+                        <li class="zr-nav-item zr-nav-show">
+                            <div class="zr-nav-subtitle">
+                                <i class="zricon-doc-empty"></i>
+                                <span class="zr-nav-subset-title">dashboard</span>
+                                <i class="zricon-arrow-down"></i>
+                            </div>
+                            <!--一级菜单-->
+                            <ul class="zr-nav-menu">
+                                <li class="zr-nav-item zr-nav-selected">
+                                    <a href="/static/tmpl/dashboard/workboard.html" class="zr-nav-subtitle">工作台</a>
+                                </li>
+                                <li class="zr-nav-item">
+                                    <div class="zr-nav-subtitle">
+                                        可视化方式<i class="zricon-arrow-down"></i>
+                                    </div>
+                                    <!--子集菜单-->
+                                    <ul class="zr-nav-menu">
+                                        <li class="zr-nav-item ">
+                                            <a href="/static/tmpl/dashboard/view/one.html" class="zr-nav-subtitle">方式一</a>
+                                        </li>
+                                        <li class="zr-nav-item">
+                                            <a href="/static/tmpl/dashboard/view/two.html" class="zr-nav-subtitle">方式二</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--没有二级菜单效果-->
+                        <li class="zr-nav-item">
+                            <div class="zr-nav-subtitle">
+                                <i class="zricon-classify-empty"></i>
+                                <span class="zr-nav-subset-title">表单</span>
+                                <i class="zricon-arrow-down"></i>
+                            </div>
+                            <!--一级菜单-->
+                            <ul class="zr-nav-menu">
+                                <li class="zr-nav-item">
+                                    <a href="/static/tmpl/form/base.html" class="zr-nav-subtitle">基础类型</a>
+                                </li>
+                                <li class="zr-nav-item">
+                                    <a href="/static/tmpl/form/advanced.html" class="zr-nav-subtitle">高级类型</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="zr-nav-item">
+                            <div class="zr-nav-subtitle">
+                                <i class="zricon-classify-empty"></i>
+                                <span class="zr-nav-subset-title">列表页</span>
+                                <i class="zricon-arrow-down"></i>
+                            </div>
+                            <!--一级菜单-->
+                            <ul class="zr-nav-menu">
+                                <li class="zr-nav-item">
+                                    <a href="/static/tmpl/list/filter.html" class="zr-nav-subtitle">列表筛选方式一</a>
+                                </li>
+                                <li class="zr-nav-item">
+                                    <a href="/static/tmpl/list/normal.html" class="zr-nav-subtitle">通用展示列表</a>
+                                </li>
+                                <li class="zr-nav-item">
+                                    <a href="/static/tmpl/list/cards.html" class="zr-nav-subtitle">卡片列表</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--没有子级菜单效果-->
+                        <li class="zr-nav-item">
+                            <div class="zr-nav-subtitle">
+                                <i class="zricon-heart-empty"></i>
+                                <a href="/static/tmpl/detail/normal.html" class="zr-nav-subset-title">详情展示</a>
+                            </div>
+                        </li>
+                        <li class="zr-nav-item">
+                            <div class="zr-nav-subtitle">
+                                <i class="zricon-classify-empty"></i>
+                                <span class="zr-nav-subset-title">结果展示</span>
+                                <i class="zricon-arrow-down"></i>
+                            </div>
+                            <!--一级菜单-->
+                            <ul class="zr-nav-menu">
+                                <li class="zr-nav-item">
+                                    <a href="/static/tmpl/result/success.html" class="zr-nav-subtitle">成功</a>
+                                </li>
+                                <li class="zr-nav-item">
+                                    <a href="/static/tmpl/result/fail.html" class="zr-nav-subtitle">失败</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="zr-nav-item">
+                            <div class="zr-nav-subtitle">
+                                <i class="zricon-classify-empty"></i>
+                                <span class="zr-nav-subset-title">异常展示</span>
+                                <i class="zricon-arrow-down"></i>
+                            </div>
+                            <!--一级菜单-->
+                            <ul class="zr-nav-menu">
+                                <li class="zr-nav-item">
+                                    <a href="/static/tmpl/error/403.html" class="zr-nav-subtitle">403</a>
+                                </li>
+                                <li class="zr-nav-item">
+                                    <a href="/static/tmpl/error/404.html" class="zr-nav-subtitle">404</a>
+                                </li>
+                                <li class="zr-nav-item">
+                                    <a href="/static/tmpl/error/500.html" class="zr-nav-subtitle">500</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="zr-layout">
+                <div class="zr-layout-header">
+                    <div class="zr-row-flex">
+                        <div class="zr-col-2 zr-layout-trigger" id="double"><i class="zricon-menu-empty"></i></div>
+                        <div class="zr-col-16">
+                            <ul class="zr-nav">
+                                <!--当前选中状态-->
+                                <li class="zr-nav-item zr-nav-selected"><a class="zr-nav-subtitle" href="">系统管理</a></li>
+                                <!--默认状态-->
+                                <li class="zr-nav-item">一级导航</li>
+                                <li class="zr-nav-item">物流规划</li>
+                            </ul>
+                        </div>
+                        <div class="zr-col-6">
+                            <div class="user-info">
+                                <div class="zr-dropdown">
+                                    <div class="user-photo">
+                                        <img src="//storage.jd.com/zrstatic/images/demo2.jpg" />
+                                    </div>
+                                    <!--标题名称-->
+                                    <a class="zr-dropdown-normal" href="javascript:void(0);">Dropdown<i class="zricon-arrow-down"></i></a>
+                                    <!--下拉菜单-->
+                                    <ul class="zr-dropdown-menu user-fix-top">
+                                        <li class="zr-dropdown-item">
+                                            <a target="_blank" href="#">Item 1</a>
+                                        </li>
+                                        <li class="zr-dropdown-item">
+                                            <a target="_blank" href="#">Item 2</a>
+                                        </li>
+                                        <li class="zr-dropdown-item zr-dropdown-disable">
+                                            Item 3（disable）
+                                        </li>
+                                        <li class="zr-dropdown-divider"></li>
+                                        <li class="zr-dropdown-item">
+                                            <a target="_blank" href="#">Item 4（normal）</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="zr-layout-content zr-layout-space">
+                    <div class="zr-breadcrumb">
+                        <span><em>Home</em><i class="zricon-arrow-right"></i></span>
+                        <span><em><a href="">Page</a></em><i class="zricon-arrow-right"></i></span>
+                        <span><em><a href="">Subpage</a></em><i class="zricon-arrow-right"></i></span>
+                        <span><em>Other info</em></span>
+                    </div>
+                    <div id="content" style="min-height: 400px;background: #fff;padding: 24px;">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script type="text/javascript">
+    //配置方法
+    Zr.config({
+        //配置plugin_modules的目录；
+        baseUrl:"/static/",
+        //开发模式，默认关闭；
+        requestTime:true
+    })
+    //初始入口，Zr各个模块准备就绪后调用；
+    Zr.ready(function(){
+        Zr.use("./js/demo");
+        Zr.use("jquery",function(zr,$){
+            $("#content").load("/static/tmpl/dashboard/workboard.html");
+        })
+    })
+</script>
+</body>
+</html>
+
