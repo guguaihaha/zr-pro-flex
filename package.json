@@ -16,7 +16,7 @@
     "zr",
     "Zr"
   ],
-  "port":9695,
+  "port":9691,
   "author": "zhangjinglin",
   "license": "ISC",
   "dependencies": {
@@ -31,3 +31,5 @@
     "gulp-webserver": "^0.9.1"
   }
 }
+
+
