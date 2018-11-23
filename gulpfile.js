@@ -7,8 +7,7 @@ var gulp = require('gulp'), //本地安装gulp所用到的地方
     rename = require('gulp-rename'),
     autoprefixer = require("gulp-autoprefixer"),
     webserver = require('gulp-webserver'),
-    // cssBase64 = require('gulp-css-base64'),
-    // base64 = require('gulp-base64'),
+    config = require('package.json'),
     watch = require('gulp-watch');
 
 //less => combine => css
@@ -95,7 +94,7 @@ gulp.task('webserver', function() {
         .pipe(webserver({
             livereload: true,
             directoryListing: true,
-            port:9696,
+            port:config.port || '9696',
             open: true,
             open: "./index.html"
         }));

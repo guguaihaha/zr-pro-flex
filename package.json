@@ -16,6 +16,7 @@
     "zr",
     "Zr"
   ],
+  "port":9695,
   "author": "zhangjinglin",
   "license": "ISC",
   "dependencies": {
