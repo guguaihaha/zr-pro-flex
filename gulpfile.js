@@ -7,7 +7,7 @@ var gulp = require('gulp'), //本地安装gulp所用到的地方
     rename = require('gulp-rename'),
     autoprefixer = require("gulp-autoprefixer"),
     webserver = require('gulp-webserver'),
-    config = require('package.json'),
+    config = require('./package.json'),
     watch = require('gulp-watch');
 
 //less => combine => css
